@@ -142,7 +142,7 @@ class MainActivity : Activity() {
                 try {
 
                     val c = URL(
-                        "http://10.0.2.2:3000/correct"
+                        "https://pesuai.onrender.com/correct"
                     ).openConnection() as HttpURLConnection
 
                     c.requestMethod = "POST"
