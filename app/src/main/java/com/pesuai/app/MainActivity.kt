@@ -123,7 +123,7 @@ class MainActivity : Activity() {
 
         l.addView(result)
 
-            lateinit var go: Button
+            lateinit var go: textview
 
               go = btn("✨ Correct with AI") {
 
