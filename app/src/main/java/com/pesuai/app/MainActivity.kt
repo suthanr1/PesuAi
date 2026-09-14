@@ -118,18 +118,15 @@ class MainActivity : Activity() {
 
         l.addView(result)
 
-        val go = Button(this).apply {
-            text = "✨ Correct with AI"
-            textSize = 16f
-        }
+            lateinit var go: Button
 
-        go.setOnClickListener {
+              go = btn("✨ Correct with AI") {
 
             val text = input.text.toString().trim()
 
-            if (text.isEmpty()) {
-                toast("Sentence type செய்யுங்கள்")
-                return@setOnClickListener
+            if(text.isEmpty()){
+    toast("Sentence type செய்யுங்கள்")
+    return@btn
             }
 
             go.isEnabled = false
