@@ -28,10 +28,12 @@ class MainActivity : Activity() {
     }
 
     private fun btn(s: String, action: () -> Unit) =
-    Button(this).apply {
+    TextView(this).apply {
         text = s
         textSize = 16f
         setTextColor(Color.rgb(30, 30, 30))
+        gravity = Gravity.CENTER_VERTICAL
+        setPadding(20, 0, 20, 0)
         setBackgroundColor(Color.rgb(225, 220, 240))
         setOnClickListener { action() }
     }
