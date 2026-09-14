@@ -30,7 +30,7 @@ class MainActivity : Activity() {
     private fun btn(s: String, action: () -> Unit) =
     TextView(this).apply {
         text = s
-        textSize = 16f
+        textSize = 18f
         setTextColor(Color.rgb(30, 30, 30))
         gravity = Gravity.CENTER_VERTICAL
         setPadding(20, 0, 20, 0)
