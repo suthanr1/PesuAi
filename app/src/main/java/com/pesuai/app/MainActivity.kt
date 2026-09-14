@@ -27,13 +27,13 @@ class MainActivity : Activity() {
         setTypeface(null, 1)
     }
 
-    private fun btn(s: String, f: () -> Unit) =
+    private fun btn(s: String, action: () -> Unit) =
     Button(this).apply {
         text = s
         textSize = 16f
         setTextColor(Color.rgb(30, 30, 30))
         setBackgroundColor(Color.rgb(225, 220, 240))
-        setOnClickListener { f() }
+        setOnClickListener { action() }
     }
 
     override fun onCreate(b: Bundle?) {
